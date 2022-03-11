@@ -1,0 +1,12 @@
+{
+    "bot-menu-title": "{channel} قائمة الروبوت",
+    "bot-menu-items": "عناصر قائمة الروبوت",
+    "nested-menu-items": "{parent} عناصر القائمة",
+    "start-adding": "البدء بإضافة عناصر القائمة",
+    "add-item": "إضافة عنصر",
+    "item-settings": "إعدادات العنصر",
+    "title": "العنوان",
+    "url": "عنوان الموقع",
+    "payload": "الحمولة",
+    "nested": "محتوى متداخل"
+}

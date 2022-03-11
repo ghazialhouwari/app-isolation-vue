@@ -1,0 +1,605 @@
+/*!
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Only contains CSS properties that will be affected in RTL
+ */
+
+$rtl-class: '.chat-rtl';
+
+#{$rtl-class} {
+    text-align: right !important;
+}
+
+#{$rtl-class} dd {
+    margin-right: 0
+}
+
+#{$rtl-class} caption {
+    text-align: right;
+}
+
+#{$rtl-class} .list-unstyled {
+    padding-right: 0;
+}
+
+#{$rtl-class} .list-inline {
+    padding-right: 0;
+}
+
+#{$rtl-class} .list-inline-item:not(:last-child) {
+    margin-left: $list-inline-padding
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+
+        // `$columns - 1` because offsetting by the width of an entire row isn't possible
+        @for $i from 0 through ($grid-columns - 1) {
+            @if not ($infix==""and $i==0) {
+
+                // Avoid emitting useless .offset-0
+                .offset#{$infix}-#{$i} {
+                    $num: $i / $grid-columns;
+                    margin-right: if($num==0, 0, percentage($num));
+                }
+            }
+        }
+    }
+}
+
+#{$rtl-class} .form-check {
+    padding-right: $form-check-input-gutter;
+    padding-left: 0
+}
+
+#{$rtl-class} .form-check-input {
+    margin-right: -$form-check-input-gutter;
+    margin-left: 0
+}
+
+#{$rtl-class} .form-check-inline {
+    padding-right: 0;
+    margin-left: $form-check-inline-margin-x;
+    margin-right: 0
+}
+
+#{$rtl-class} .form-check-inline .form-check-input {
+    margin-left: $form-check-inline-input-margin-x;
+    margin-right: 0
+}
+
+@include media-breakpoint-up(sm) {
+    #{$rtl-class} .form-inline .form-check {
+        padding-right: 0
+    }
+
+    #{$rtl-class} .form-inline .form-check-input {
+        margin-left: $form-check-input-margin-x;
+        margin-right: 0
+    }
+}
+
+#{$rtl-class} .dropdown-toggle::after {
+    margin-right: .255em;
+    margin-left: 0
+}
+
+#{$rtl-class} .dropdown-toggle:empty::after {
+    margin-right: 0
+}
+
+#{$rtl-class} .dropdown-menu {
+    left: auto;
+    float: right;
+    text-align: right;
+}
+
+#{$rtl-class} .dropup .dropdown-toggle::after {
+    margin-right: .255em;
+    margin-left: 0
+}
+
+#{$rtl-class} .dropup .dropdown-toggle:empty::after {
+    margin-right: 0
+}
+
+#{$rtl-class} .dropright .dropdown-menu {
+    margin-right: $dropdown-spacer;
+    margin-left: 0
+}
+
+#{$rtl-class} .dropright .dropdown-toggle::after {
+    margin-right: $caret-width * .85;
+    margin-left: 0;
+    border-right: $caret-width solid
+}
+
+#{$rtl-class} .dropright .dropdown-toggle:empty::after {
+    margin-right: 0
+}
+
+#{$rtl-class} .dropleft .dropdown-menu {
+    margin-left: $dropdown-spacer;
+    margin-right: 0
+}
+
+#{$rtl-class} .dropleft .dropdown-toggle::after {
+    margin-right: $caret-width * .85;
+    margin-left: 0
+}
+
+#{$rtl-class} .dropleft .dropdown-toggle::before {
+    margin-left: $caret-width * .85;
+    margin-right: 0;
+    border-left: $caret-width solid;
+}
+
+#{$rtl-class} .dropleft .dropdown-toggle:empty::after {
+    margin-right: 0
+}
+
+#{$rtl-class} .btn-group .btn+.btn,
+#{$rtl-class} .btn-group .btn+.btn-group,
+#{$rtl-class} .btn-group .btn-group+.btn,
+#{$rtl-class} .btn-group .btn-group+.btn-group,
+#{$rtl-class} .btn-group-vertical .btn+.btn,
+#{$rtl-class} .btn-group-vertical .btn+.btn-group,
+#{$rtl-class} .btn-group-vertical .btn-group+.btn,
+#{$rtl-class} .btn-group-vertical .btn-group+.btn-group {
+    margin-right: -1px;
+    margin-left: 0
+}
+
+#{$rtl-class} .btn-group>.btn:first-child {
+    margin-right: 0
+}
+
+#{$rtl-class} .btn-group>.btn-group:not(:last-child)>.btn,
+#{$rtl-class} .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+#{$rtl-class} .btn-group>.btn-group:not(:first-child)>.btn,
+#{$rtl-class} .btn-group>.btn:not(:first-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+#{$rtl-class} .dropdown-toggle-split::after {
+    margin-right: 0
+}
+
+#{$rtl-class} .btn-group-vertical>.btn+.btn,
+#{$rtl-class} .btn-group-vertical>.btn+.btn-group,
+#{$rtl-class} .btn-group-vertical>.btn-group+.btn,
+#{$rtl-class} .btn-group-vertical>.btn-group+.btn-group {
+    margin-right: 0
+}
+
+#{$rtl-class} .input-group>.custom-file+.custom-file,
+#{$rtl-class} .input-group>.custom-file+.custom-select,
+#{$rtl-class} .input-group>.custom-file+.form-control,
+#{$rtl-class} .input-group>.custom-select+.custom-file,
+#{$rtl-class} .input-group>.custom-select+.custom-select,
+#{$rtl-class} .input-group>.custom-select+.form-control,
+#{$rtl-class} .input-group>.form-control+.custom-file,
+#{$rtl-class} .input-group>.form-control+.custom-select,
+#{$rtl-class} .input-group>.form-control+.form-control {
+    margin-right: -$input-border-width;
+    margin-left: 0
+}
+
+#{$rtl-class} .input-group>.custom-select:not(:last-child),
+#{$rtl-class} .input-group>.form-control:not(:last-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+#{$rtl-class} .input-group>.custom-select:not(:first-child),
+#{$rtl-class} .input-group>.form-control:not(:first-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+#{$rtl-class} .input-group>.custom-file:not(:last-child) .custom-file-label,
+#{$rtl-class} .input-group>.custom-file:not(:last-child) .custom-file-label::before {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+#{$rtl-class} .input-group>.custom-file:not(:first-child) .custom-file-label,
+#{$rtl-class} .input-group>.custom-file:not(:first-child) .custom-file-label::before {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+#{$rtl-class} .input-group-append .btn+.btn,
+#{$rtl-class} .input-group-append .btn+.input-group-text,
+#{$rtl-class} .input-group-append .input-group-text+.btn,
+#{$rtl-class} .input-group-append .input-group-text+.input-group-text,
+#{$rtl-class} .input-group-prepend .btn+.btn,
+#{$rtl-class} .input-group-prepend .btn+.input-group-text,
+#{$rtl-class} .input-group-prepend .input-group-text+.btn,
+#{$rtl-class} .input-group-prepend .input-group-text+.input-group-text {
+    margin-right: -$input-border-width;
+    margin-left: 0
+}
+
+#{$rtl-class} .input-group-prepend {
+    margin-left: -$input-border-width;
+    margin-right: 0
+}
+
+#{$rtl-class} #{$rtl-class} .input-group-append {
+    margin-right: -$input-border-width;
+    margin-left: 0
+}
+
+#{$rtl-class} .input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle),
+#{$rtl-class} .input-group>.input-group-append:last-child>.input-group-text:not(:last-child),
+#{$rtl-class} .input-group>.input-group-append:not(:last-child)>.btn,
+#{$rtl-class} .input-group>.input-group-append:not(:last-child)>.input-group-text,
+#{$rtl-class} .input-group>.input-group-prepend>.btn,
+#{$rtl-class} .input-group>.input-group-prepend>.input-group-text {
+    @include border-left-radius(0);
+}
+
+#{$rtl-class} .input-group>.input-group-append>.btn,
+#{$rtl-class} .input-group>.input-group-append>.input-group-text,
+#{$rtl-class} .input-group>.input-group-prepend:first-child>.btn:not(:first-child),
+#{$rtl-class} .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child),
+#{$rtl-class} .input-group>.input-group-prepend:not(:first-child)>.btn,
+#{$rtl-class} .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    @include border-right-radius(0);
+}
+
+#{$rtl-class} .custom-control {
+    padding-right: $custom-control-gutter;
+    padding-left: 0
+}
+
+#{$rtl-class} .custom-control-inline {
+    margin-left: $custom-control-spacer-x;
+    margin-right: 0
+}
+
+#{$rtl-class} .custom-control-label::before {
+    right: 0;
+}
+
+#{$rtl-class} .custom-control-label::after {
+    right: 0;
+}
+
+#{$rtl-class} .custom-select[multiple],
+#{$rtl-class} .custom-select[size]:not([size="1"]) {
+    padding-left: $custom-select-padding-x;
+    padding-right: 0
+}
+
+#{$rtl-class} .custom-file-label::after {
+    left: 0;
+}
+
+#{$rtl-class} .nav {
+    padding-right: 0;
+}
+
+#{$rtl-class} .navbar-brand {
+    margin-left: $navbar-padding-x;
+    margin-right: 0
+}
+
+#{$rtl-class} .navbar-nav {
+    padding-right: 0;
+}
+
+#{$rtl-class} .navbar-expand {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        $next: breakpoint-next($breakpoint, $grid-breakpoints);
+        $infix: breakpoint-infix($next, $grid-breakpoints);
+
+        &#{$infix} {
+            @include media-breakpoint-up($next) {
+                .navbar-nav {
+                    .dropdown-menu-right {
+                        right: auto;
+                        left: 0; // Reset the default from `.dropdown-menu`
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-nav {
+        .dropdown-menu-right {
+            right: auto;
+            left: 0; // Reset the default from `.dropdown-menu`
+        }
+    }
+}
+
+#{$rtl-class} .card-link+.card-link {
+    margin-right: $card-spacer-x;
+    margin-left: 0
+}
+
+@media (min-width: 576px) {
+
+    #{$rtl-class} .card-group>.card:first-child .card-header,
+    #{$rtl-class} .card-group>.card:first-child .card-img-top {
+        border-top-left-radius: 0
+    }
+
+    #{$rtl-class} .card-group>.card:first-child .card-footer,
+    #{$rtl-class} .card-group>.card:first-child .card-img-bottom {
+        border-bottom-left-radius: 0
+    }
+
+    #{$rtl-class} .card-group>.card:last-child .card-header,
+    #{$rtl-class} .card-group>.card:last-child .card-img-top {
+        border-top-right-radius: 0
+    }
+
+    #{$rtl-class} .card-group>.card:last-child .card-footer,
+    #{$rtl-class} .card-group>.card:last-child .card-img-bottom {
+        border-bottom-right-radius: 0
+    }
+}
+
+#{$rtl-class} .pagination {
+    padding-right: 0;
+}
+
+#{$rtl-class} .page-link {
+    margin-right: -$pagination-border-width;
+    margin-left: 0
+}
+
+#{$rtl-class} .page-item,
+#{$rtl-class} .pagination-lg .page-item,
+#{$rtl-class} .pagination-sm .page-item {
+    &:first-child {
+        .page-link {
+            margin-right: 0;
+            @include border-left-radius(0);
+            @include border-right-radius($border-radius);
+        }
+    }
+
+    &:last-child {
+        .page-link {
+            @include border-left-radius(0);
+            @include border-right-radius($border-radius);
+        }
+    }
+}
+
+#{$rtl-class} .alert-dismissible {
+    padding-left: ($close-font-size + $alert-padding-x * 2);
+    padding-right: 0
+}
+
+#{$rtl-class} .alert-dismissible .close {
+    left: 0;
+}
+
+#{$rtl-class} .list-group {
+    padding-right: 0;
+}
+
+#{$rtl-class} .close {
+    float: left;
+}
+
+#{$rtl-class} .modal-footer>:not(:first-child) {
+    margin-right: .25rem;
+    margin-left: 0
+}
+
+#{$rtl-class} .modal-footer>:not(:last-child) {
+    margin-left: .25rem;
+    margin-right: 0
+}
+
+#{$rtl-class} .bs-tooltip-auto[x-placement^=right] .arrow,
+#{$rtl-class} .bs-tooltip-right .arrow {
+    left: 0;
+}
+
+#{$rtl-class} .bs-tooltip-auto[x-placement^=right] .arrow::before,
+#{$rtl-class} .bs-tooltip-right .arrow::before {
+    right: 0;
+    border-right-color: $tooltip-arrow-color
+}
+
+#{$rtl-class} .bs-tooltip-auto[x-placement^=left] .arrow,
+#{$rtl-class} .bs-tooltip-left .arrow {
+    right: 0;
+}
+
+#{$rtl-class} .bs-tooltip-auto[x-placement^=left] .arrow::before,
+#{$rtl-class} .bs-tooltip-left .arrow::before {
+    left: 0;
+    border-left-color: $tooltip-arrow-color;
+}
+
+#{$rtl-class} .popover {
+    left: 0;
+}
+
+#{$rtl-class} .bs-popover-auto[x-placement^=right],
+#{$rtl-class} .bs-popover-right {
+    margin-left: $popover-arrow-height;
+    margin-right: 0
+}
+
+#{$rtl-class} .bs-popover-auto[x-placement^=right] .arrow,
+#{$rtl-class} .bs-popover-right .arrow {
+    left: calc((#{$popover-arrow-height} + #{$popover-border-width}) * -1);
+}
+
+#{$rtl-class} .bs-popover-auto[x-placement^=right] .arrow::before,
+#{$rtl-class} .bs-popover-right .arrow::before {
+    left: 0;
+    border-right-color: $popover-arrow-outer-color
+}
+
+#{$rtl-class} .bs-popover-auto[x-placement^=right] .arrow::after,
+#{$rtl-class} .bs-popover-right .arrow::after {
+    left: 1px;
+    border-right-color: $popover-arrow-color
+}
+
+#{$rtl-class} .bs-popover-auto[x-placement^=bottom] .popover-header::before,
+#{$rtl-class} .bs-popover-bottom .popover-header::before {
+    right: 50%;
+    margin-right: ($popover-arrow-width / -2);
+    margin-left: 0
+}
+
+#{$rtl-class} .bs-popover-auto[x-placement^=left],
+#{$rtl-class} .bs-popover-left {
+    margin-right: $popover-arrow-height;
+    margin-left: 0
+}
+
+#{$rtl-class} .bs-popover-auto[x-placement^=left] .arrow,
+#{$rtl-class} .bs-popover-left .arrow {
+    right: calc((#{$popover-arrow-height} + #{$popover-border-width}) * -1);
+}
+
+#{$rtl-class} .bs-popover-auto[x-placement^=left] .arrow::before,
+#{$rtl-class} .bs-popover-left .arrow::before {
+    right: 0;
+    border-left-color: $popover-arrow-outer-color
+}
+
+#{$rtl-class} .bs-popover-auto[x-placement^=left] .arrow::after,
+#{$rtl-class} .bs-popover-left .arrow::after {
+    right: $popover-border-width;
+    border-left-color: $popover-arrow-color;
+}
+
+#{$rtl-class} .carousel-control-prev {
+    right: 0
+}
+
+#{$rtl-class} .carousel-control-next {
+    left: 0
+}
+
+#{$rtl-class} .carousel-indicators {
+    padding-right: 0;
+}
+
+#{$rtl-class} .carousel-indicators li::before {
+    right: 0;
+}
+
+#{$rtl-class} .carousel-indicators li::after {
+    right: 0;
+}
+
+#{$rtl-class} .border-right {
+    border-left: $border-width solid $border-color !important;
+    border-right-width: 0 !important;
+}
+
+#{$rtl-class} .border-left {
+    border-right: $border-width solid $border-color !important;
+    border-left-width: 0 !important;
+}
+
+#{$rtl-class} .border-right-0 {
+    border-left: 0 !important
+}
+
+#{$rtl-class} .border-left-0 {
+    border-right: 0 !important
+}
+
+#{$rtl-class} .rounded-right {
+    @include border-left-radius($border-radius);
+    @include border-right-radius(0);
+}
+
+#{$rtl-class} .rounded-left {
+    @include border-left-radius(0);
+    @include border-right-radius($border-radius);
+}
+
+#{$rtl-class} .embed-responsive .embed-responsive-item,
+#{$rtl-class} .embed-responsive embed,
+#{$rtl-class} .embed-responsive iframe,
+#{$rtl-class} .embed-responsive object,
+#{$rtl-class} .embed-responsive video {
+    right: 0;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .float#{$infix}-left {
+            @include float-right;
+        }
+
+        .float#{$infix}-right {
+            @include float-left;
+        }
+    }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @each $prop,
+        $abbrev in (margin: m, padding: p) {
+
+            @each $size,
+            $length in $spacers {
+
+                #{$rtl-class} .#{$abbrev}r#{$infix}-#{$size} {
+                    #{$prop}-right: 0 !important;
+                    #{$prop}-left: $length !important;
+                }
+
+                #{$rtl-class} .#{$abbrev}l#{$infix}-#{$size} {
+                    #{$prop}-left: 0 !important;
+                    #{$prop}-right: $length !important;
+                }
+            }
+        }
+
+        #{$rtl-class} .mr#{$infix}-auto {
+            margin-left: auto !important;
+            margin-right: 0 !important;
+        }
+
+        #{$rtl-class} .ml#{$infix}-auto {
+            margin-right: auto !important;
+            margin-left: 0 !important;
+        }
+    }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        #{$rtl-class} .text#{$infix}-left {
+            text-align: right !important;
+        }
+
+        #{$rtl-class} .text#{$infix}-right {
+            text-align: left !important;
+        }
+    }
+}

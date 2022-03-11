@@ -1,0 +1,12 @@
+{
+    "host": "Host",
+    "port": "Port",
+    "from-user": "From user",
+    "title-obj-profile": "{type} Profile",
+    "email-profile": "Email profile",
+    "profile-inuse": "Can't delete email profile in use",
+    "start-tls": "Start TLS",
+    "auth": "Auth",
+    "debug": "Debug",
+    "ssl": "SSL"
+}

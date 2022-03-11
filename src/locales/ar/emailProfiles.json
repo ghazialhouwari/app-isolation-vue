@@ -1,0 +1,13 @@
+{
+    "name": "الاسم",
+    "host": "المضيف",
+    "port": "المنفذ",
+    "from-user": "من المستخدم",
+    "title-obj-profile": "{type} الملف الشخصي",
+    "email-profile": "حسابات البريد الإلكتروني",
+    "profile-inuse": "لا يمكن حذف بريد إلكتروني قيد الاستخدام",
+    "start-tls": "Start TLS",
+    "auth": "Auth",
+    "debug": "Debug",
+    "ssl": "SSL"
+}

@@ -1,0 +1,69 @@
+.chat-i {
+    font-family: 'icon8';
+    font-size: 16px;
+    color: #616161;
+    font-weight: normal;
+    display: inline-block;
+    background: none;
+    text-indent: 0;
+    overflow: hidden;
+    &:before {
+        font-style: normal;
+        speak: none;
+
+        display: inline-block;
+        text-decoration: inherit;
+        width: 1em;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+.icon-attach:before {
+    content: '\E802';
+}
+.icon-mic:before {
+    content: '\E801';
+}
+.icon-thumbs-up:before {
+    content: '\E800';
+}
+.icon-sent:before {
+    content: '\E803';
+}
+.icon-more-than:before, .chat-rtl .icon-less-than.reversable:before {
+    content: '\E804';
+}
+.icon-less-than:before, .chat-rtl .icon-more-than.reversable:before {
+    content: '\E806';
+}
+.icon-v-menu:before {
+    content: '\E805';
+}
+.icon-delete:before {
+    content: '\E80b';
+}
+.icon-doc:before {
+    content: '\e807';
+    color: #4285f4;
+}
+.icon-sheet:before {
+    content: '\e808';
+    color: #0f9d58;
+}
+.icon-pdf:before {
+    content: '\e809';
+    color: #DB4437;
+}
+.icon-play:before {
+    content: '\e80a';
+}
+.icon-face:before {
+    content: '\e80c';
+}
+.icon-marker:before {
+    content: '\E80D';
+}

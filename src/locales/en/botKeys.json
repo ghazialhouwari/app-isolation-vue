@@ -1,0 +1,11 @@
+{
+    "bot-key": "Bot Key",
+    "key-name": "Key Name",
+    "add-bot-key": "Add Bot Key",
+    "title-bot-key": "{type} Bot Key",
+    "value": "Value",
+    "value-type": "Value Type",
+    "single-line": "Single Line",
+    "multi-lines": "Multi Lines",
+    "required-value": "The Value field is required"
+}

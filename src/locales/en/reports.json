@@ -1,0 +1,15 @@
+{
+    "event-time": "Event Time",
+    "job-done-name": "Job Done Name",
+    "bot-user": "Bot User",
+    "user-id": "User ID",
+    "mdc": "MDC",
+    "timestamp": "Timestamp",
+    "message": "Message",
+    "user-channel-id": "User Channel ID",
+    "user-not-found": "User not found",
+    "message-type": "Message Type",
+    "error": "Error",
+    "info": "Info",
+    "intent-id": "Intent ID"
+}

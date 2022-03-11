@@ -1,0 +1,11 @@
+{
+    "bot-key": "مفتاح الروبوت",
+    "bot-key-name": "اسم مفتاح الروبوت",
+    "add-bot-key": "إضافة مفتاح روبوت",
+    "title-bot-key": "{type} مفتاح الروبوت",
+    "value": "القيمة",
+    "value-type": "نوع القيمة",
+    "single-line": "خط واحد",
+    "multi-lines": "خطوط متعددة",
+    "required": "حقل مطلوب"
+}

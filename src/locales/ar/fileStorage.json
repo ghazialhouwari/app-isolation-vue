@@ -1,0 +1,16 @@
+{
+    "file-storage": "ملف التخزين",
+    "title-obj-storage": "{type} الذاكرة",
+    "bucket-name": "اسم الحزمة",
+    "storage-type": "نوع الذاكرة",
+    "region": "المنطقة",
+    "secret_key": "المفتاح السري",
+    "access_key": "مفتاح الوصول",
+    "project_id": "رقم المشروع",
+    "private_key": "المفتاح الخاص",
+    "private_key_id": "رقم المفتاح الخاص",
+    "client_id": "رقم العميل",
+    "client_email": "البريد الإلكتروني للعميل",
+    "media_link": "رابط الوسائط المتعددة",
+    "url": "URL"
+}

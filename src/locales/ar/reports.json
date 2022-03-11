@@ -1,0 +1,15 @@
+{
+    "event-time": "وقت الحدث",
+    "job-done-name": "اسم العمل المنجز",
+    "bot-user": "مستخدم الروبوت",
+    "user-id": "User ID",
+    "mdc": "MDC",
+    "timestamp": "Timestamp",
+    "message": "الرسالة",
+    "user-channel-id": "User Channel ID",
+    "user-not-found": "User not found",
+    "message-type": "Message Type",
+    "error": "Error",
+    "info": "Info",
+    "intent-id": "Intent ID"
+}

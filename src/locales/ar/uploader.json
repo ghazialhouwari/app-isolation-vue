@@ -1,0 +1,21 @@
+{
+    "drop-here": "افلت هنا",
+    "drag-and-drop": "قم بسحب ملف واسقطه هنا ل {breakLine} تحميله أو",
+    "browse": "تصفح",
+    "allowed-types": "أنواع الملفات المسموح بها",
+    "all-types": "جميع أنواع الملفات",
+    "pending": "قيد الانتظار",
+    "uploading": "جاري تحميل",
+    "ready": "جاهز",
+    "error": "خطأ",
+    "remove-all": "حذف الكل",
+    "done": "تم",
+    "drop-to-add": "افلت هنا لإضافة المزيد من الملفات او ",
+    "discard-changes-title": "جاري التحميل",
+    "discard-changes-body": "ما زالت هناك بعض الملفات قيد التحميل، هل أنت متأكد أنك تريد إيقاف التحميل؟",
+    "abort": "إيقاف",
+    "not-supported-file": "{fileName} نوع هذا الملف غير مسموح به، يرجى اختيار ملف بأحد الأنواع المسموح بها {allowedTypes}",
+    "blocked-file-type": "{fileName} نوع هذا الملف محظور",
+    "files-limit": "يمكنك فقط اختيار {limit} ملفات كحدٍ أقصى",
+    "file-limit": "يمكنك فقط اختيار {limit} ملف كحدٍ أقصى"
+}

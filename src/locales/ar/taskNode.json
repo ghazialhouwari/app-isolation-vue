@@ -1,0 +1,20 @@
+{
+    "input-variables": "متغيرات الإدخال",
+    "authentication-token": "رمز المصادقة",
+    "merchant-id": "رقم الوكيل",
+    "invoice-id": "رقم الفاتورة",
+    "amount": "القيمة",
+    "expiry-period": "مدة الصلاحية",
+    "currency": "العملة",
+    "payment-description": "تفاصيل الدفع",
+    "customer-id": "رقم العميل",
+    "customer-email-address": "البريد الإلكتروني للعميل",
+    "customer-mobile-number": "رقم هاتف العميل",
+    "notify-me": "إبلاغي",
+    "notification-email": "البريد الإلكتروني للإشعارات",
+    "bot-key-search": "البحث عن مفتاح الروبوت",
+    "time-unit": "وحدة الزمن",
+    "output-variables": "متغيرات الإخراج",
+    "payment-link": "رايط الدفع",
+    "expiry-date-time": "وقت وتاريخ انتهاء مدة صلاحية رابط الدفع"
+}

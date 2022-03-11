@@ -1,0 +1,21 @@
+{
+    "drop-here": "Drop Here",
+    "drag-and-drop": "Drag and drop file here to {breakLine}upload or",
+    "browse": "Browse",
+    "allowed-types": "Allowed types",
+    "all-types": "All file types",
+    "pending": "Pending",
+    "uploading": "Uploading",
+    "ready": "Ready",
+    "error": "Error",
+    "remove-all": "Remove All",
+    "done": "Done",
+    "drop-to-add": "Drop to add more files or ",
+    "discard-changes-title": "Uploading In Progress",
+    "discard-changes-body": "There are still files uploading. Are you sure want to abort uploading?",
+    "abort": "Abort",
+    "not-supported-file": "{fileName} not allowed file type, please select file with one of the following types {allowedTypes}",
+    "blocked-file-type": "{fileName} is blocked file type",
+    "files-limit": "You can only select up to {limit} files",
+    "file-limit": "You can only select up to {limit} file"
+}

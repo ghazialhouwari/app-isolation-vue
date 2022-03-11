@@ -1,0 +1,48 @@
+function loadScript(urls) {
+    var head = document.querySelector('head');
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = urls.shift();
+    var callback = function() {
+        if(urls.length)
+            loadScript(urls);            
+    };
+    script.onreadystatechange = callback;
+    script.onload = callback;
+    head.appendChild(script);
+}
+function loadHtml() {
+    var body = document.querySelector('body');
+    var html = document.createElement('template--wrapper');
+    html.id = "template--wrapper";
+    body.appendChild(html);
+}
+function getBotEnvUrl() {
+    return '';
+}
+if (typeof window.injectTemplateScript === "undefined") {
+    window.injectTemplateScript = function () {
+        window.injectTemplateScript = function() {};
+        var sctipts = [
+            <% for (var index in htmlWebpackPlugin.files.js) { %>
+                "<%= htmlWebpackPlugin.files.js[index] %>",
+            <% } %>
+        ];
+        loadHtml();
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+        var isEdge = !isIE && !!window.StyleMedia;
+        if(isIE || isEdge) {
+            sctipts.unshift(getBotEnvUrl()+'/static/js/app-isolations-sd.js');
+            sctipts.unshift(getBotEnvUrl()+'/static/js/iePolyfills.js');
+        }
+        loadScript(sctipts);
+    }
+}
+
+if (document.readyState === 'complete') {
+    window.injectTemplateScript();
+} else {
+    window.addEventListener('load', function() {
+        window.injectTemplateScript();
+    });
+}

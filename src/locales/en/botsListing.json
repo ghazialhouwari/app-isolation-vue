@@ -1,0 +1,10 @@
+{
+    "bot-languages": "Bot Languages",
+    "bot-owner":  "Bot Owner",
+    "bot-settings": "Bot Settings",
+    "action-bot": "{object} Bot",
+    "action-bot-text": "Are you sure you want to {object} the selected bot?",
+    "total-intents": "Total Number of Intents",
+    "bot-channels": "Bot Channels",
+    "bot-id": "Bot ID"
+}

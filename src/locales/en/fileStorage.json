@@ -1,0 +1,16 @@
+{
+    "file-storage": "File Storage",
+    "title-obj-storage": "{type} Storage",
+    "bucket-name": "Bucket Name",
+    "storage-type": "Storage Type",
+    "region": "Region",
+    "secret_key": "Secret Key",
+    "access_key": "Access Key",
+    "project_id": "Project ID",
+    "private_key": "Private Key",
+    "private_key_id": "Private Key ID",
+    "client_id": "Client ID",
+    "client_email": "Client Email",
+    "media_link": "Media Link",
+    "url": "URL"
+}

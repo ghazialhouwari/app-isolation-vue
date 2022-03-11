@@ -1,0 +1,12 @@
+{
+    "entity": "custom entity",
+    "entity-value": "Entity Value",
+    "entity-values": "Entity Values",
+    "value-synonyms": "Value Synonyms",
+    "title-obj-entity": "{type} Custom Entity",
+    "value": "Value",
+    "synonyms": "Synonyms",
+    "another-value": "Another Value",
+    "synonym-hint": "Press enter to add multiple synonym",
+    "title": "Title"
+}

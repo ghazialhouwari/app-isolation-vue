@@ -1,0 +1,100 @@
+//
+// Color system
+//
+
+$primary:                 #00B2FF;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                #00B2FF;
+$link-decoration:           none;
+$link-hover-color:          #006AFF;
+$link-hover-decoration:     none;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+    xs: 0,
+    md: 769px
+);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+    md: 360px
+);
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         0.375rem;
+$input-btn-padding-x:         1rem;
+
+$input-btn-focus-box-shadow:  none;
+$input-btn-border-width:      0;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-padding-y:               0.375rem;
+$btn-padding-x:               1rem;
+$btn-border-width:            1px;
+
+$btn-box-shadow:              none;
+$btn-focus-width:             0;
+$btn-active-box-shadow:       none;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           20px;
+
+// Forms
+
+$input-padding-y:                       0.375rem;
+$input-padding-x:                       1rem;
+
+$input-border-width:                    0;
+$input-box-shadow:                      none;
+
+$input-border-radius:                   20px;
+
+$input-focus-bg:                        transparent;
+$input-focus-border-color:              transparent;
+$input-focus-color:                     #495057;
+$input-focus-width:                     0;
+$input-focus-box-shadow:                none;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-link-active-color:        #212529;
+$dropdown-link-active-bg:           transparent;
+
+$dropdown-item-padding-y:           0.5rem;
+$dropdown-item-padding-x:           1rem;
+
+// Cards
+$card-bg:                           transparent;
+
+// List group
+
+$list-group-bg:                     transparent;
+
+$list-group-item-padding-y:         .5rem;
+$list-group-item-padding-x:         .5rem;
+
+
+$font-family-base: Roboto, "Helvetica Neue", Arial, sans-serif !default;
