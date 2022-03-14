@@ -34,7 +34,7 @@ export const wait = ms => {
 export const templateSelector = (selector, all = false) => {
     all = all ? 'querySelectorAll' : 'querySelector';
     if (process.env.NODE_ENV == 'production') {
-        return document.querySelector('#template--wrapper').shadowRoot[all](selector);
+        return document.querySelector('#template-wrapper').shadowRoot[all](selector);
     }
     return document[all](selector);
 };

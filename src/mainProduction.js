@@ -16,5 +16,5 @@ Vue.use(vueCustomElement);
 App.store = store;
 App.i18n = i18n;
 
-Vue.component('custom-styles', CustomStyles);
-Vue.customElement('template--wrapper', App, {shadow: true})
+Vue.component('CustomStyles', CustomStyles);
+Vue.customElement('template-wrapper', App, {shadow: true})

@@ -12,11 +12,26 @@ function loadScript(urls) {
     head.appendChild(script);
 }
 function loadHtml() {
-    var body = document.querySelector('body');
-    var html = document.createElement('template--wrapper');
-    html.id = "template--wrapper";
-    body.appendChild(html);
+    var cssId = 'materialDesignIcon';
+    if (!document.getElementById(cssId)) {
+        var head  = document.querySelector('head');
+        var link  = document.createElement('link');
+        link.id   = cssId;
+        link.rel  = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css';
+        link.media = 'all';
+        head.appendChild(link);
+    }
+
+    if (!document.getElementById('template-wrapper')) {
+        var body = document.querySelector('body');
+        var html = document.createElement('template-wrapper');
+        html.id = "template-wrapper";
+        body.appendChild(html);
+    }
 }
+
 function getBotEnvUrl() {
     return '';
 }

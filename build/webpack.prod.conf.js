@@ -71,7 +71,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         ? 'index.html'
         : config.build.index,
       template: process.env.NODE_ENV === 'production' ? 'template.html' : 'index.html',
-      inject: process.env.NODE_ENV !== 'production' ,
+      inject: process.env.NODE_ENV !== 'production',
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
